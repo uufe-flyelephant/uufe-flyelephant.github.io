@@ -1,5 +1,5 @@
 ### KN DOCS
-* local development
+* Local Env
 ``` bash
 npm i docsify-cli -g
 docsify serve .
