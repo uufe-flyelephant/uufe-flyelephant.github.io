@@ -1,0 +1,27 @@
+{
+  "name": "uufe-flyelephant.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "docsify-cli": "^4.3.0"
+  },
+  "scripts": {
+    "start": "docsify serve ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uufe-flyelephant/uufe-flyelephant.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/uufe-flyelephant/uufe-flyelephant.github.io/issues"
+  },
+  "homepage": "https://github.com/uufe-flyelephant/uufe-flyelephant.github.io#readme"
+}
