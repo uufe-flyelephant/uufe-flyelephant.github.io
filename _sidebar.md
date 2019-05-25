@@ -4,3 +4,6 @@
   - [JS运行时](./docs/javascript/runtime.md)
 - [HTML](./docs/html/index.md)
 - [CSS](./docs/css/index.md)
+- Linux
+  - [VIM](./docs/linux/vim.md)
+  - [Problems](./docs/linux/problems.md)
