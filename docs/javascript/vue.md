@@ -85,13 +85,13 @@ new Vue({
 - 组件间通信
 - data 必须是个函数
 - Object.freeze()
-
 - 计算属性的实现
 - key 就地复用
 - 对象的 v-for
 - removeEventListner 的必要性
 - slot编译作用域：父级模板里的所有内容都是在父级作用域中编译的；子模板里的所有内容都是在子作用域中编译的。
-
+- provide 和 inject 依赖注入
+- v-once 尽量别用
 ## 计算属性的实现
 1. 为每个属性创建一个 watcher 对象, 
 2. 本身挂载到 vm 上
