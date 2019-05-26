@@ -160,6 +160,7 @@ Set the 'hlsearch' and 'incsearch' options
 * todo: help vert.   :vert term
 * copy to clipboard
 * ,nt: Create new bottom terminal in terminal normal mode. Create new bottom terminal in vim normal mode
+* 各窗口大小修改
 
 # vim terminal
 * [Japanese Document](https://vim-jp.org/vimdoc-en/terminal.html)
