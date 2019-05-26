@@ -77,9 +77,8 @@ new Vue({
   - （提问：只更新数据就行了？）
   - （回答，子组件的props 属性也是响应式的）
   - （https://github.com/vuejs/vue/blob/dev/src/core/instance/lifecycle.js）
-  -　(注意，　如果父组件给子组件　传了ｓｌｏｔ　那么子组件会执行强制更新　forceUpdate )
-
-  
+  - (注意，　如果父组件给子组件　传了slot 那么子组件会执行强制更新　forceUpdate )
+- 组件的消亡
 
 ## 文档中需要留意的点
 - 组件的生命周期
