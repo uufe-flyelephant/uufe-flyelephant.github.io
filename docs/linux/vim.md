@@ -5,9 +5,12 @@
 brew install vim
 ```
 * centos 7
+[Article](https://medium.com/@chusiang/install-the-vim-8-0-and-youcompleteme-with-make-on-centos-7-4-1573ad780953)
 ``` bash
+yum install gcc-c++ ncurses-devel python-devel
 git clone https://github.com/vim/vim.git
 cd vim
+ ./configure --disable-nls --enable-cscope --enable-gui=no --enable-multibyte  --enable-pythoninterp --enable-rubyinterp --prefix=/home/jonny/.local/vim --with-features=huge  --with-python-config-dir=/usr/lib/python2.7/config --with-tlib=ncurses --without-x
 #make distclean  # if you build Vim before
 make -j8
 sudo make install
@@ -167,4 +170,4 @@ Set the 'hlsearch' and 'incsearch' options
 * vert term
 * term ++rows=8
 * bot term ++rows=8
-
+* My IDE Like: vim file | ,tt | ,tmb | :vert term
