@@ -1,10 +1,12 @@
-- [JavaScript](./docs/javascript/index.md)
+- JavaScript
   - [JS基础](./docs/javascript/basic.md)
   - [ES6](./docs/javascript/es6.md)
   - [JS运行时](./docs/javascript/runtime.md)
-  - [vue核心原理](./docs/javascript/vue.md)
 - [HTML](./docs/html/index.md)
 - [CSS](./docs/css/index.md)
+- Vue
+  - [核心原理](./docs/vue/core.md)
+- React, todo-Andy
 - Linux
   - [VIM](./docs/linux/vim.md)
   - [Problems](./docs/linux/problems.md)
