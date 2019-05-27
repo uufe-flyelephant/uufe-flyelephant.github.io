@@ -8,5 +8,6 @@
   - [核心原理](./docs/vue/core.md)
 - React, todo-Andy
 - Linux
+  - [Command](./docs/linux/command.md)
   - [VIM](./docs/linux/vim.md)
   - [Problems](./docs/linux/problems.md)
