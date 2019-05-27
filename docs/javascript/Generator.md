@@ -14,6 +14,7 @@ console.log(a);//函数本身
 console.log(a.next());// 1
 console.log(a.next());// 2
 console.log(a.next());// underfined
+```
 这个函数运行会返回Iterator实例，然后执行Iterator实例的next()方法，这时候这个函数才开始执行，并且把yield后面的值作为对象返回，知道运行到函数末尾，最后返回underfined；
 
 
