@@ -6,6 +6,16 @@
 grep -R "fusion" .
 ```
 
+### sed
+mac: sed -i '' "s/yoyo/xulu/g" `find . -type f`
+linux: sed -i "s/yoyo/xulu/g" `find . -type f`
+
+### find
+??
+
+### awk/xargs
+??
+
 ### 查端口
 lsof -i:8080
 
