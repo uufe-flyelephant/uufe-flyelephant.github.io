@@ -1,5 +1,6 @@
 - JavaScript
   - [JS基础](./docs/javascript/basic.md)
+  - [模块](./docs/javascript/module.md)
   - [ES6](./docs/javascript/es6.md)
   - [JS运行时](./docs/javascript/runtime.md)
 - [HTML](./docs/html/index.md)

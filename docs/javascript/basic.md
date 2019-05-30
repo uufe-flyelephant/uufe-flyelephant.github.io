@@ -355,7 +355,8 @@ v8? bookmark保存项
 * 为啥有 变量提升 和函数提升
 
 
-
+## other read
+[awesome-javascript-reads](https://github.com/deadcoder0904/awesome-javascript-reads)
 
 
 
