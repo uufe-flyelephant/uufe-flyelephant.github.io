@@ -25,3 +25,9 @@ ps aux | grep node
 
 ### 文件大小
 du . -h
+
+### sz & rz
+* yum install lrzszrz
+* sz & rz 都是站在服务器的角度
+* sz filename:  "send".  服务器角度：向客户端发送文件。  客户端角度：下载文件
+* rz:  "receive".   服务器角度：从客户端接收文件。  客户端角度：上传文件
