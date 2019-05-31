@@ -151,6 +151,8 @@ bar
 执行完毕
 ```
 
+# AMD & CMD & UMD
+
 # webpack打包
 ```
 
