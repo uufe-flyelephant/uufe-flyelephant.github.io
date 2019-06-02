@@ -49,3 +49,66 @@ show.next().value // 1
 show.next().value // NaN
 show.next(2).value // 6
 ```
+
+
+
+
+异步处理
+
+```javascript
+var urls = ['url1', 'url2', 'url3'];
+
+function* request(urls) {
+    var data;
+
+    for (var i = 0, j = urls.length; i < j; ++i) {
+        data = yield req(urls[i], data);
+    }
+}
+
+var r = request(urls);
+r.next();
+
+function log(url, data, cb) {
+    setTimeout(function() {
+        cb(url);
+    }, 1000);
+    
+}
+
+
+function req(url, data) {
+    var p = new Promise(function(resolve, reject) {
+        log(url, data, function(rs) {
+            if (!rs) {
+                reject();
+            } else {
+                resolve(rs);
+            }
+        });
+    });
+
+    p.then(function(data) {
+        console.log(data);
+        r.next(data);
+    }).catch(function() {
+        
+    });
+}
+```
+
+
+for ... of 代替next（）
+```javascript
+function* showNumbers() {
+    yield 1;
+    yield 2;
+    return 3;
+}
+
+var show = showNumbers();
+
+for (var n of show) {
+    console.log(n) // 1 2
+}
+```
