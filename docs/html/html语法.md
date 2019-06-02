@@ -23,7 +23,7 @@ HTML实体以和号（&）开头，分号（;）结尾，两者之间表示实�
 
 ![html实体转义](./img/htmlentity.jpg)
 
-### CDATA(Character Data)
+### CDATA(Character Data)，PCDATA(Parsed Character Data)和RCDATA(Replaceable Character Data)
 
 在XML中，不包含子元素的元素的内容默认必须是PCDATA(Parsed Character Data)
 ```
@@ -37,7 +37,16 @@ HTML实体以和号（&）开头，分号（;）结尾，两者之间表示实�
 <![CDATA[<p>some text</p>]]>
 </data>
 ```
+RCDATA 表示里面可以有&xx;等实体字符，也可以包含<字符而不会被当作tag open来解析。 比如:
+```
+<textarea>
+<p>
+&lt;
+</p>
+</textarea>
+```
 
+在RCDATA里，&lt;会替换为<（Replaceable的含义），拿到值（比如textarea.value）后，是无从得知源码里是否有&lt;等实体字符的。
 
 ### 元素分类
 
