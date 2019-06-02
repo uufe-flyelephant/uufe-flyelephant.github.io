@@ -32,3 +32,20 @@ console.log(a.next());// 3
 console.log(a.next());// underfined
 ```
 如果yield和return一起执行，return的值会作为最后的返回值，return后面的yield不执行。
+
+
+
+传参写法
+```javascript
+function* showNumbers() {
+    var one = yield 1;
+    var two = yield 2 * one;
+    yield 3 * two;
+}
+
+var show = showNumbers();
+
+show.next().value // 1
+show.next().value // NaN
+show.next(2).value // 6
+```
