@@ -16,3 +16,6 @@ vi ~/.bash_profile
 export LANG="zh_CN.UTF-8"
 export LC_ALL="zh_CN.UTF-8"
 ```
+
+* 文件夹颜色修改
+[dir_colors linux颜色配置](https://www.cnblogs.com/sparkbj/p/6211561.html)

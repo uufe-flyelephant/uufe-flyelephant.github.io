@@ -1,8 +1,10 @@
 - JavaScript
   - [JS基础](./docs/javascript/basic.md)
   - [模块](./docs/javascript/module.md)
+  - [内存](./docs/javascript/memory.md)
   - [ES6](./docs/javascript/es6.md)
   - [JS运行时](./docs/javascript/runtime.md)
+  - [TODO](./docs/javascript/todo.md)
 - [HTML](./docs/html/index.md)
 - [CSS](./docs/css/index.md)
 - Vue
@@ -12,3 +14,14 @@
   - [Command](./docs/linux/command.md)
   - [VIM](./docs/linux/vim.md)
   - [Problems](./docs/linux/problems.md)
+- 网络原理
+  - [HTTP(MDN-REFERENCE)](https://developer.mozilla.org/en-US/docs/Web/HTTP)
+- Web安全
+  - [XSS](https://www.cnblogs.com/meituantech/p/9718677.html)
+  - [CSRF](https://www.cnblogs.com/meituantech/p/9777222.html)
+  - [网络劫持](http://baijiahao.baidu.com/s?id=1599975025887254147&wfr=spider&for=pc)
+  - [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+- 其他
+  - [大厂博客](./docs/others/blogs.md)
+
+

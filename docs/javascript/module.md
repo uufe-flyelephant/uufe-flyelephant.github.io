@@ -151,7 +151,6 @@ bar
 执行完毕
 ```
 
-# webpack打包
-```
-
-```
+# webpack
+webpack打包生成的代码，读一下  
+[示例地址](https://github.com/uufe-flyelephant/examples/blob/master/javascript/modules/webpack)
