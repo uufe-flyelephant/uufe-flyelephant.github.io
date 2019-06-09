@@ -15,6 +15,13 @@
 - Vue
   - [核心原理](./docs/vue/core.md)
 - React, todo-Andy
+- Babel
+  - [概览](./docs/babel/babel_summary.md)
+  - [架构体系]
+  - [插件源码]
+  - [自定义插件]
+- 编译原理
+  - 四则运算简易实现
 - Linux
   - [Command](./docs/linux/command.md)
   - [VIM](./docs/linux/vim.md)
