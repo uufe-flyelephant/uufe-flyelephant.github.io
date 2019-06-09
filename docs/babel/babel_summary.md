@@ -1,7 +1,7 @@
 ## Babel 是什么
 官网文档: https://www.babeljs.cn/docs/
 
-** Babel 是一个 JavaScript 编译器 **
+**Babel 是一个 JavaScript 编译器**
 Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中，Babel 能为你做的事情：
 
 - 语法转换
@@ -15,7 +15,7 @@ Babel 是一个编译器。主要的包是 babel-core,负责代码解析、转�
 原始代码 --> [Babel Plugin] --> 转换后的代码
 ```
 
-Babel, 官网提供了一个 repl 环境:https://
+Babel, 官网提供了一个 ```repl``` 环境: https://
 www.babeljs.cn/repl
 
 在这个环境中，可以测试每个特定的插件的功能。
@@ -156,6 +156,7 @@ preset-env 是智能的。只管用，不需要去管你的运行时环境哪个
         "plugins": [...]
         }
     ```
+
 ## 插件顺序
 
 **插件的排列顺序很重要**
