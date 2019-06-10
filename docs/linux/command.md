@@ -7,9 +7,9 @@ grep -R "fusion" .
 ```
 
 ### sed
-* mac: sed -i '' "s/yoyo/xulu/g" `find . -type f`
-* mac: sed -i "s/oldstring/newstring/g" `grep oldstring -rl path`
-* linux: sed -i "s/yoyo/xulu/g" `find . -type f`
+* mac: sed -i '' "s/yoyo/xulu/g" \`find . -type f\`
+* mac: sed -i "s/oldstring/newstring/g" \`grep oldstring -rl path\`
+* linux: sed -i "s/yoyo/xulu/g" \`find . -type f\`
 
 ### find
 ??
