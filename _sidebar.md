@@ -12,3 +12,4 @@
   - [Command](./docs/linux/command.md)
   - [VIM](./docs/linux/vim.md)
   - [Problems](./docs/linux/problems.md)
+  - [GIT](./docs/linux/git.md)
