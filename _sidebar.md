@@ -13,7 +13,8 @@
     - [dom event]
   - [document对象]
   - [template标签]
-- [CSS](./docs/css/index.md)
+- CSS
+  - [基础](./docs/css/index.md)
 - Vue
   - [核心原理](./docs/vue/core.md)
 - React, todo-Andy

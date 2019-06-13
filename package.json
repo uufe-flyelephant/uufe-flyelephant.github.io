@@ -8,10 +8,11 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "docsify-cli": "^4.3.0"
+    "docsify-cli": "^4.3.0",
+    "http-server": "^0.11.1"
   },
   "scripts": {
-    "start": "docsify serve ."
+    "start": "http-server ."
   },
   "repository": {
     "type": "git",
