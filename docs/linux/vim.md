@@ -150,6 +150,14 @@ Set the 'hlsearch' and 'incsearch' options
 ## Nertree
 * refresh tree: 'R'
 
+## 其他记录
+* 提高键盘反应速度 - for Mac
+[文章](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x)
+```bash
+defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
+defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
+```
+
 # 好的资源
 [Best_Vim_Tips](https://vim.fandom.com/wiki/Best_Vim_Tips)
 [a-why-vi-vim](http://www.viemu.com/a-why-vi-vim.html)
