@@ -80,6 +80,14 @@ new Vue({
   - (注意，　如果父组件给子组件　传了slot 那么子组件会执行强制更新　forceUpdate )
 - 组件的消亡
 
+## 类图,流程图
+
+![](./imgs/getset.png)
+![](./imgs/dep.png)
+![](./imgs/watcher.png)
+![](./imgs/dep-watcher.png)
+![](./imgs/process.png)
+
 ## 文档中需要留意的点
 - 组件的生命周期
 - 组件间通信
