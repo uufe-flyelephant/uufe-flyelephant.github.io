@@ -150,6 +150,9 @@ Set the 'hlsearch' and 'incsearch' options
 ## Nertree
 * refresh tree: 'R'
 
+## Regex
+[Article Reference](https://www.cnblogs.com/PegasusWang/p/3153300.html)
+
 ## 其他记录
 * 提高键盘反应速度 - for Mac
 [文章](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x)
