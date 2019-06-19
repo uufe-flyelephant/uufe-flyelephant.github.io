@@ -15,7 +15,7 @@ Babel 是一个编译器。主要的包是 babel-core,负责代码解析、转�
 原始代码 --> [Babel Plugin] --> 转换后的代码
 ```
 
-Babel, 官网提供了一个 ```repl``` 环境: https://www.babeljs.cn/repl  or https://babeljs.io/repl
+Babel, 官网提供了一个 ```repl``` 环境: 中文官网 https://www.babeljs.cn/repl  和 英文官网 https://babeljs.io/repl
 
 在这个环境中，可以测试每个特定的插件的功能。
 
