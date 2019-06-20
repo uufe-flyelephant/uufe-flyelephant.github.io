@@ -12,7 +12,7 @@
     * 单向数据流 Flux 架构
 
 
-![Flux 架构](./assets/images/flux.png)
+![Flux 架构](../assets/images/flux.png)
 
 [React: 用于构建用户界面的 JavaScript 库](https://zh-hans.reactjs.org/)
 
@@ -195,7 +195,7 @@ diff 算法 O(n)
 2. 类型相同的兄弟节点可以唯一标识，map key，用于 diff 中，提高性能
 
 
-![Diff](./assets/images/diff.png)
+![Diff](../assets/images/diff.png)
 
 
 #### 组件设计模式
