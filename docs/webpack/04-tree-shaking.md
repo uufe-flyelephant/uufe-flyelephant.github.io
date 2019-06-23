@@ -49,6 +49,7 @@ lib.someFunc(); // statically resolved
 *refs:*  
     1. [es6 static module structure](https://exploringjs.com/es6/ch_modules.html#static-module-structure)  
     2. [ES6 模块的 17 个要点](https://robinchen.me/tech/2016/11/05/tech-es6-modules.html)
+    3. [你的Tree-Shaking并没什么卵用](https://zhuanlan.zhihu.com/p/32831172)
 
 1. production 模式默认开启 tree shaking
 2. `package.json` 文件中声明 `"sideEffects"` 副作用属性，若都是 ESM，则声明值为 `false`，否则：

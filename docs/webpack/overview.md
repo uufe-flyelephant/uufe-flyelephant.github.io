@@ -1,6 +1,26 @@
 # Webpack
 
-[TOC]
+## 0. 背景
+
+### 0.1 为什么需要构建工具？
+* ES6、JSX 语法转换
+* CSS 前缀补全、预处理器（less、sass）
+* 压缩混淆
+* 图片压缩
+* ......
+
+### 0.2 构建演变
+
+```
+                requirejs/seajs
+ant + YUI tool    -> grunt ->    fis3/gulp -> rollup/webpack/parcel
+                  任务，磁盘 IO
+```
+
+### 0.3 选择 webpack
+* 社区生态丰富，官方插件丰富
+* 配置灵活，插件化扩展
+* 官方更新迭代快，webpack4
 
 ## 1. 概念
 
@@ -13,6 +33,14 @@
     * *静态，编译时模块分析*
 
     递归构建依赖关系图(dependency graph)，节点是模块，模块打包成一个或多个 bundle
+
+    webpack 默认配置文件：webpack.config.js  
+    通过 webpack --config 指定配置文件
+
+    ```bash
+    npm i webpack webpack-cli --save-dev
+    ./node_modules/.bin/webpack -v
+    ```
 
 2. 核心概念
 
@@ -173,3 +201,6 @@ runtime 包含在模块交互时，连接模块所需的加载和解析逻辑。
 更新的内容有两部分：
   1. 更新后的 manifest(JSON)
   2. 一个或多个更新后的 chunk (JavaScript)
+
+*refs:*  
+  [深入浅出 Webpack](http://webpack.wuhaolin.cn)
