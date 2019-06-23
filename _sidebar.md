@@ -34,6 +34,11 @@
   - [源码解析]
   - [工程实践]
     - [自定义loader]
+- 性能优化
+  - [概览](./docs/performance/index.md)
+  - [加载性能](./docs/performance/loading.md)
+  - [渲染性能](./docs/performance/render.md)
+  - [2c业务秒开](./docs/performance/2c.md)
 - 编译原理
   - 四则运算简易实现
 - Linux
@@ -55,3 +60,4 @@
   - [Flutter](./docs/kuaduan/flutter.md)
 - 其他
   - [大厂博客](./docs/others/blogs.md)
+  - [圈内大会](./docs/others/meeting.md)
