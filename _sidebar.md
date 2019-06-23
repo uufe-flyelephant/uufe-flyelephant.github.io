@@ -41,6 +41,7 @@
   - [概览](./docs/performance/index.md)
   - [加载性能](./docs/performance/loading.md)
   - [渲染性能](./docs/performance/render.md)
+  - [网络](./docs/performance/network.md)
   - [2c业务秒开](./docs/performance/2c.md)
 - 编译原理
   - 四则运算简易实现
