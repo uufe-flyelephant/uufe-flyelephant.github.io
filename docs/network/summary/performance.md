@@ -72,7 +72,8 @@
 + 温度传感器原理：https://baike.baidu.com/item/%E6%B8%A9%E5%BA%A6%E4%BC%A0%E6%84%9F%E5%99%A8
 + 压力传感器原理：https://baike.baidu.com/item/%E5%8E%8B%E5%8A%9B%E4%BC%A0%E6%84%9F%E5%99%A8/993161?fr=aladdin
 + 压力传感器原理2：http://www.360doc.com/content/18/0901/22/21923670_783136508.shtml
-+ Youtube 视频：https://www.youtube.com/watch?v=Y2OPnrgb0pY
++ Youtube 视频（Digital to Analog Converter）：https://www.youtube.com/watch?v=Y2OPnrgb0pY
++ Youtube 视频 (Analog to Digital Converter） https://www.youtube.com/watch?v=EnfjYwe2A0w
 
 ### 带宽
 + 信道带宽与信道容量
