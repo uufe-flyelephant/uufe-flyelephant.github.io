@@ -5,6 +5,19 @@
 方式：
 1. entry 多入口
 2. CommonsChunkPlugin 去重分离 chunk
-3. `System.import` 或 `require.ensure` 动态导入
+3. `System.import`（需要 babel 转换）或 `require.ensure` （CommonJS）动态导入
+    ```bash
+    npm i @babel/plugin-syntax-dynamic-import --save-dev
+    ```
+
+    ```javascript
+    // babel.config.js
+    {
+        plugins: [
+            "@babel/plugin-syntax-dynamic-import"
+        ]
+    }
+    ```
+
 
 react loadable component, suspence api

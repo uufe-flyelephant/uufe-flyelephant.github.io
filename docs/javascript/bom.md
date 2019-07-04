@@ -11,3 +11,6 @@
 5. history
 6. location
 7. screen
+
+## 须懂的
+* [事件捕获、事件冒泡](https://www.imooc.com/article/9833)
