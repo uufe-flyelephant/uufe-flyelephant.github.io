@@ -82,10 +82,21 @@
   - 无线网络和移动网络
   - [HTTP(MDN-REFERENCE)](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - Web安全
-  - [XSS](https://www.cnblogs.com/meituantech/p/9718677.html)
-  - [CSRF](https://www.cnblogs.com/meituantech/p/9777222.html)
-  - [网络劫持](http://baijiahao.baidu.com/s?id=1599975025887254147&wfr=spider&for=pc)
-  - [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+    - [Web安全简介](blog/frontend/web-security/introducation.md)
+    - [浏览器安全](blog/frontend/web-security/browser.md)
+    - 客户端脚本安全
+        - [跨站脚本攻击(XSS)](blog/frontend/web-security/xss.md)
+        - [跨站点请求伪造(CSRF)](blog/frontend/web-security/csrf.md)
+        - [点击劫持(ClickJacking)](blog/frontend/web-security/clickjacking.md)
+        - [HTML5安全]
+    - [服务端应用安全]
+    - [安全渗透测试实际操作]
+    - 扩展
+        - [Web安全结合AI和机器学习]
+        - [防火墙技术]
+        - [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
+
+
 - 数据结构 / 算法 
 - 项目工程实践 
   - 前后端同构
