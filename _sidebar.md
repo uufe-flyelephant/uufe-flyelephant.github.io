@@ -82,12 +82,12 @@
   - 无线网络和移动网络
   - [HTTP(MDN-REFERENCE)](https://developer.mozilla.org/en-US/docs/Web/HTTP)
 - Web安全
-    - [Web安全简介](blog/frontend/web-security/introducation.md)
-    - [浏览器安全](blog/frontend/web-security/browser.md)
+    - [Web安全简介](./docs/web-security/introducation.md)
+    - [浏览器安全](./docs/web-security/browser.md)
     - 客户端脚本安全
-        - [跨站脚本攻击(XSS)](blog/frontend/web-security/xss.md)
-        - [跨站点请求伪造(CSRF)](blog/frontend/web-security/csrf.md)
-        - [点击劫持(ClickJacking)](blog/frontend/web-security/clickjacking.md)
+        - [跨站脚本攻击(XSS)](./docs/web-security/xss.md)
+        - [跨站点请求伪造(CSRF)](./docs/web-security/csrf.md)
+        - [点击劫持(ClickJacking)](./docs/web-security/clickjacking.md)
         - [HTML5安全]
     - [服务端应用安全]
     - [安全渗透测试实际操作]
