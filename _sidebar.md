@@ -52,6 +52,7 @@
   - [GIT](./docs/linux/git.md)
 - 计算机网络
   - 概述
+    - [通信基础](./docs/network/summary/communication_foundation.md)
     - [互联网概述](./docs/network/summary/internet.md)
     - [网络的性能](./docs/network/summary/performance.md)
     - [网络体系结构](./docs/network/summary/structure.md)
