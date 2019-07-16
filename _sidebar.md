@@ -45,6 +45,7 @@
   - [2c业务秒开](./docs/performance/2c.md)
 - 编译原理
   - 四则运算简易实现
+  - [the-super-tiny-compiler](https://the-super-tiny-compiler.glitch.me/)
 - Linux
   - [Command](./docs/linux/command.md)
   - [VIM](./docs/linux/vim.md)
