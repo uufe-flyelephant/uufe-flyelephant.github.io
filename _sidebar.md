@@ -56,7 +56,7 @@
     - [互联网概述](./docs/network/summary/internet.md)
     - [网络的性能](./docs/network/summary/performance.md)
     - [网络体系结构](./docs/network/summary/structure.md)
-  - [物理层]
+  - [物理层](./docs/network/physical-layer.md)
   - 数据链路层
     - [点对点协议]
     - [以太网]
