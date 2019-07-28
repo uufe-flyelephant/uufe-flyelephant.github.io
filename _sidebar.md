@@ -33,6 +33,7 @@
     - [文件指纹](./docs/webpack/02-文件指纹.md)
     - [Code Splitting](./docs/webpack/03-code-splitting.md)
     - [Tree Shaking](./docs/webpack/04-tree-shaking.md)
+    - [实践](./docs/webpack/06-实践.md)
   - [核心原理]
   - [源码解析]
   - [工程实践]
