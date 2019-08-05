@@ -62,6 +62,14 @@
     - [树](./docs/data-structure/06-tree.md)
     - [图](./docs/data-structure/07-graph.md)
     - [排序](./docs/data-structure/08-sort.md)
+- 算法
+  - 算法设计与技巧
+    - [分而治之](./docs/algorithm/divide-and-conquer.md)
+    - [动态规划](./docs/algorithm/dynamic-programming.md)
+    - 贪心算法
+    - 回溯算法       
+  - 相关知识
+    - 算法复杂度
 - 计算机网络
   - 概述
     - [通信基础](./docs/network/summary/communication_foundation.md)
@@ -108,7 +116,6 @@
         - [Web安全结合AI和机器学习]
         - [防火墙技术]
         - [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-- 数据结构 / 算法 
 - 项目工程实践 
   - 前后端同构
 - [NodeJS](./docs/nodejs/index.md)
