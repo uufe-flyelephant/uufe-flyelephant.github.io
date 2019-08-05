@@ -166,6 +166,10 @@ nnoremap就在normal模式下(狂按esc后的模式)生效
 这样可以减少快捷键所用到的键位组合的个数  
 一个组合可以有多种用途 就不用费劲心思思考 该映射哪个没被绑定过的键了  
 
+## Color
+![vim-color-list](./imgs/vim-color-list.png)
+[vim-color-list](http://www.calmar.ws/vim/256-xterm-24bit-rgb-color-chart.html)
+
 ## 其他记录
 * 提高键盘反应速度 - for Mac
 [文章](https://apple.stackexchange.com/questions/10467/how-to-increase-keyboard-key-repeat-rate-on-os-x)
