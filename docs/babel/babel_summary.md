@@ -213,6 +213,6 @@ webpack执行打包时，优先读取options中的配置。如果没有设置opt
 
 # TODO
 RIver补充待整理：
-[the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler)
-[babel-handbook](https://github.com/jamiebuilds/babel-handbook)
-[js自举js虚拟机](https://github.com/bramblex/jsjs)
+* [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler)
+* [babel-handbook](https://github.com/jamiebuilds/babel-handbook)
+* [js自举js虚拟机](https://github.com/bramblex/jsjs)
