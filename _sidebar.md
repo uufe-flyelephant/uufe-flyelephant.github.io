@@ -33,6 +33,7 @@
     - [文件指纹](./docs/webpack/02-文件指纹.md)
     - [Code Splitting](./docs/webpack/03-code-splitting.md)
     - [Tree Shaking](./docs/webpack/04-tree-shaking.md)
+    - [实践](./docs/webpack/06-实践.md)
   - [核心原理]
   - [源码解析]
   - [工程实践]
@@ -51,6 +52,24 @@
   - [VIM](./docs/linux/vim.md)
   - [Problems](./docs/linux/problems.md)
   - [GIT](./docs/linux/git.md)
+- 数据结构
+  - [概述](./docs/data-structure/overview.md)
+    - [栈](./docs/data-structure/01-stack.md)
+    - [队列](./docs/data-structure/02-queue.md)
+    - [链表](./docs/data-structure/03-linkedlist.md)
+    - [集合](./docs/data-structure/04-set.md)
+    - [字典和散列表](./docs/data-structure/05-dictionary-hashtable.md)
+    - [树](./docs/data-structure/06-tree.md)
+    - [图](./docs/data-structure/07-graph.md)
+    - [排序](./docs/data-structure/08-sort.md)
+- 算法
+  - 算法设计与技巧
+    - [分而治之](./docs/algorithm/divide-and-conquer.md)
+    - [动态规划](./docs/algorithm/dynamic-programming.md)
+    - 贪心算法
+    - 回溯算法       
+  - 相关知识
+    - 算法复杂度
 - 计算机网络
   - 概述
     - [通信基础](./docs/network/summary/communication_foundation.md)
@@ -98,7 +117,6 @@
         - [Web安全结合AI和机器学习]
         - [防火墙技术]
         - [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-- 数据结构 / 算法 
 - 项目工程实践 
   - 前后端同构
 - [NodeJS](./docs/nodejs/index.md)
@@ -107,3 +125,4 @@
 - 其他
   - [大厂博客](./docs/others/blogs.md)
   - [圈内大会](./docs/others/meeting.md)
+  - [字符集/编码](./docs/others/charset.md)
