@@ -2,7 +2,7 @@
       
  “块级元素”对应的英文是 block-level element，常见的块级元素有< div >、< li >和< table >等。
  “块级元素”和“display 为 block 的元素”不是一个概念。
- <li>的 display 值 是list-item,<table>的默认display是table,他们都属于块级元素，因为一个水平流上只能显示一个块级，多个块级换行显示。
+ < li >的 display 值 是list-item,<table>的默认display是table,他们都属于块级元素，因为一个水平流上只能显示一个块级，多个块级换行显示。
 
  实际开发中我们会使用block 或者 table， 并不会使用list-item,其原因有三个
     1. 1个字符的比较多，其他都是5个字符;
