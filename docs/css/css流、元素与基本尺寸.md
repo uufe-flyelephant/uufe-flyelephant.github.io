@@ -9,7 +9,7 @@
     2. 会出现项目符号，就是li前面的圆点，可以用list-style:none消除;
     3. IE 浏览器不支持伪元素的 display 值为 list- item。这是不使用 display:list-item 清除浮动的 主因，兼容性不好。对于 IE 浏览器(包括 IE11)，普通元 素设置 display:list-item 有效，但是:before /:after 伪元素就不行;
       
-#### 为什么list-item元素会出现项目符号
+#### 一、为什么list-item元素会出现项目符号
     css盒子概念:块级盒子和内联盒子，块级盒子负责结构，内联盒子负责内容。
     
     后来出现一个list-item，默认要加项目符号的盒子，这个盒子叫附加盒子，专门用来放圆点、数字这些项目符号。
@@ -19,10 +19,10 @@
     按照理解，实际上display:block 应该等同于display:block-block;
     display:table  脑补为 display:block-table;
     
-####  width/height 作用于内在的容器盒子
+####  二、width/height 作用于内在的容器盒子
 
       
-#### width:auto 属性介绍
+#### 三、width:auto 属性介绍
 width:auto 是宽度的默认值，但是他的特性却又4种
 1. 充分利用可用空间。  比如div、p这种标签，宽度默认是100%于父容器的。专业名称(fill-available)了解即可
 2. 收缩与包裹。典型代表就是浮动、绝对定位、inline-block 元素或 table 元素， 英文称为 shrink-to-fit，直译为“收缩到合适”，
@@ -43,8 +43,38 @@ width:auto 是宽度的默认值，但是他的特性却又4种
 [样例1]('http://demo.cssworld.cn/3/2-4.php')
  “包裹性”对实际开发有什么作用呢?
 [样例2]('http://demo.cssworld.cn/3/2-5.php')
-2.首选最小宽度。
-
-
-
+ 2.首选最小宽度。是指元素最适合的最小宽度。
+  在css中图片和文字的权重大于布局，就算父级宽度为0，图文照样显示；
+  东亚文字:为一个汉字的宽度，比如font-size：12，宽度就是12；
+  英文:宽度由连续的英文字符单元决定，一般会以空格、短横线、问号和其他字符终止。例如display:inline-block,此时就会取display:inline-的宽度，取到字符后面的位置。
+###### 首选最小宽度”对我们实际开发的作用。
+[例子]('http://demo.cssworld.cn/3/2-6.php')
+ 3.最大宽度。 最大宽度就是元素可以有的最大宽度。
+   作用就是让元素在一行显示，比如iscroll的滚动效果。
+      
+      
+#### 四、width值作用的细节
+ 
+  div{width:100px},是如何作用到这个div上的。
+  width是作用在内在盒子上的，内在盒子有很多部分构成
+  margin（透明）
+  ---------
+  border
+  ---------
+  padding
+  ---------
+  content
+  ---------
+  width作用在content上。
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
 
