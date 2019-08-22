@@ -1,4 +1,4 @@
-## 一、块级元素
+## 块级元素
       
  “块级元素”对应的英文是 block-level element，常见的块级元素有< div >、< li >和< table >等。
  “块级元素”和“display 为 block 的元素”不是一个概念。
