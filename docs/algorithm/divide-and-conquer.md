@@ -121,13 +121,6 @@ console.log(`max sum of subarrays is : ${maxSubSum}`);
 递归版本：
 
 ```
-/**
- * Description:
- * Assumption  table: {1: 'A', 2: 'B', ... , 26: 'Z'}
- * Input: 124
- * Output: ABD, LD
- * */
-
 function genTable() {
     let table = {};
     for(let i = 1; i <= 26; i++) {
@@ -143,7 +136,7 @@ function convert(str) {
     let { length } = str;
 
     if (length === 1) {
-        return [table[str]];
+        return [table[str]] || [];
     }
 
     let lastChar = table[str[length-1]];
@@ -151,12 +144,16 @@ function convert(str) {
     let subConverts = convert(str.slice(0,-1));
 
     if (length === 2) {
-        return lastTwoChar ? [table[str[length-2]] + lastChar, lastTwoChar] : [lastChar + table[str[length-2]]]
+        (table[str[length-2]] && lastChar) && result.push(table[str[length-2]] + lastChar);
+        lastTwoChar && result.push(lastTwoChar);
+        return result;
     }
 
-    result = subConverts.map(sub => {
-        return sub + lastChar;
-    });
+    if (lastChar) {
+        result = subConverts.map(sub => {
+            return sub + lastChar;
+        });
+    }
 
     if (lastTwoChar) {
         subConverts = convert(str.slice(0,-2));
@@ -171,9 +168,11 @@ function preConvert(num) {
     return convert(num.toString());
 }
 
-let res = preConvert(1234);
-console.log(table);
+let res = preConvert(2021);
 console.log(res);
+
+// output 
+// [ 'TBA', 'TU' ]
 ```
 
 
