@@ -57,21 +57,27 @@ width:auto 是宽度的默认值，但是他的特性却又4种
  
   div{width:100px},是如何作用到这个div上的。
   width是作用在内在盒子上的，内在盒子有很多部分构成
-  margin（透明）
-  ---------
-  border
-  ---------
-  padding
-  ---------
-  content
-  ---------
+  margin（透明）、border、padding、content(盒模型最里层)
   width作用在content上。
   
+  div { width: 100px; padding: 20px; border: 20px solid; } 实际尺寸为什么会变大？
   
   
-  
-  
-  
+
+#### 五、CSS流体布局下的宽度分离原则
+
+   所谓“宽度分离原则”，就是 CSS 中的 width 属性不与影响宽度的 padding/border(有
+时候包括 margin)属性共存，也就是不能出现以下的组合:
+  .box { width: 100px; border: 1px solid; }  或者     .box { width: 100px; padding: 20px; }
+  正确写法：
+  .father {
+        width: 180px;
+       }
+  .son {
+        margin: 0 20px;
+        padding: 20px;
+        border: 1px solid;
+       }
   
   
   
