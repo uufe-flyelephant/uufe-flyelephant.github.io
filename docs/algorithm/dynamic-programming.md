@@ -26,7 +26,7 @@
 
 #### 问题分解
 
-步骤
+步骤(自底向上)
     1. 计算只有一种物品时，从 0 到 W 重量的最大价值
     2. 基于一种物品的结果，计算只有两种物品时 从 0 到 W 重量的最大价值
     3. 重复1、2步骤直到所有物品都考了进去得到 从 0 到 W 重量的最大价值
@@ -36,23 +36,6 @@
 #### 源代码
 [循环遍历版本](https://github.com/loiane/javascript-datastructures-algorithms/blob/master/src/js/algorithms/dynamic-programing/knapsack.js)
 ```
-function findValues(n, capacity, kS) {
-  let i = n;
-  let k = capacity;
-  // console.log('Items that are part of the solution:');
-  while (i > 0 && k > 0) {
-    if (kS[i][k] !== kS[i - 1][k]) {
-      // console.log(
-      //  item ' + i + ' can be part of solution w,v: ' + weights[i - 1] + ',' + values[i - 1]
-      //  );
-      i--;
-      k -= kS[i][k];
-    } else {
-      i--;
-    }
-  }
-}
-
 function knapSack(capacity, weights, values, n) {
   const kS = [];
   for (let i = 0; i <= n; i++) {
@@ -73,8 +56,6 @@ function knapSack(capacity, weights, values, n) {
     }
     // console.log(kS[i].join());
   }
-  // extra algorithm to find the items that are part of the solution
-  findValues(n, capacity, kS);
   return kS[n][capacity];
 }
 ```
@@ -99,6 +80,162 @@ function knapSack(capacity, weights, values, n) {
 
 ## 解决一个实际问题
 
+问题：给出一个非负整数集合set和一个指定的和sum，判断这个数组中是否存在两个不同的子集使得两个自己的和都为sum。
+
+举例：
+
++ 输入一个集合 [3, 34, 4, 12, 5, 2]
++ 和是 9
++ 那么 3+2+5 = 9， 4+5 = 9 结果为 true
+
+问题分解(自顶向下)：
+1. 考虑找出所有的组合使得和为 sum，如果这种组合数大于1则结果为存在即true。
+2. 子问题：
+    + 考虑从原集合中最后拿出的一个元素是 set[i] 
+    + 那么最终结果为 sum 的情况是：
+        1. 不包含 set[i] 时已存在存在和为sum 的子集合
+        2. 子集合包括 set[i] 时，存在子集合使得和为 sum-set[i] 为真
+
+代码递归版（自顶向下）：
+
+```
+function isSubsetSumRecursive(set = [], len, sum) {
+    if (sum === 0) {
+        return true;
+    }
+    if (len === 0 && sum != 0) {
+        return false;
+    }
+
+    if (set[len-1] > sum) {
+        return isSubsetSumRecursive(set, len-1, sum);
+    }
+
+    return isSubsetSumRecursive(set, len-1, sum) || isSubsetSumRecursive(set, len-1, sum-set[len-1]);
+}
+
+let set = [3, 34, 4, 12, 5, 2], sum = 9;
+let result = isSubsetSumRecursive(set, set.length, sum);
+
+console.log(`result is :`, result);
+```
+
+代码遍历版（自底向上）：
+
+```
+//Input:  set[] = [3, 34, 4, 12, 5, 2], sum = 9
+//Output:  True  
+//There is a subset (4, 5) with sum 9.
+/**
+ * set  集合
+ * len   集合元素个数
+ * sum  和
+ */
+function isSubsetSum(set = [], len, sum) {
+    let subset = [];
+
+    // If sum is 0, then answer is true 
+    for (let i = 0; i <= len; i++) {
+        subset[i] = [];
+        subset[i][0] = true;
+    }
+
+    // If sum is not 0 and set is empty, then answer is false 
+    for (let i = 0; i <= sum; i++) {
+        subset[0][i] = false;
+    }
+
+    for (let i = 1; i <= len; i++) {
+        for (let j = 1; j <= sum; j++) {
+            if (j < set[i-1]) {
+                subset[i][j] = subset[i-1][j];
+            } else {
+                subset[i][j] = subset[i-1][j] || subset[i-1][j-set[i-1]];
+            }
+        }
+    }
+
+    let equalSubCount = 0;
+
+    for (let n = 0; n <= len; n++) {
+        if (subset[n][sum]) {
+            equalSubCount++;
+        }
+    }
+
+    return equalSubCount > 1;
+}
+
+let set = [3, 34, 4, 12, 5, 2], sum = 9;
+let result = isSubsetSum(set, set.length, sum);
+
+console.log(`result is :`, result);
+```
+
+问题二：
+
+给出一个映射 `table: {1: 'A', 2: 'B', ... , 26: 'Z'}` 
+
+输入：`1234`
+
+输出：`[ 'ABCD', 'LCD', 'AWD' ]`
+
+递归版本：
+
+```
+function genTable() {
+    let table = {};
+    for(let i = 1; i <= 26; i++) {
+        table[i] = String.fromCharCode(65 + i - 1);
+    }
+    return table;
+}
+
+const table = genTable();
+
+function convert(str) {
+    let result = [];
+    let { length } = str;
+
+    if (length === 1) {
+        return [table[str]] || [];
+    }
+
+    let lastChar = table[str[length-1]];
+    let lastTwoChar = table[str.slice(-2, length)];
+    let subConverts = convert(str.slice(0,-1));
+
+    if (length === 2) {
+        (table[str[length-2]] && lastChar) && result.push(table[str[length-2]] + lastChar);
+        lastTwoChar && result.push(lastTwoChar);
+        return result;
+    }
+
+    if (lastChar) {
+        result = subConverts.map(sub => {
+            return sub + lastChar;
+        });
+    }
+
+    if (lastTwoChar) {
+        subConverts = convert(str.slice(0,-2));
+        result = result.concat(subConverts.map(sub => {
+            return sub + lastTwoChar;
+        }));
+    }
+    return result;
+}
+
+function preConvert(num) {
+    return convert(num.toString());
+}
+
+let res = preConvert(2021);
+console.log(res);
+
+// output 
+// [ 'TBA', 'TU' ]
+```
 
 ## Refs
 + [Dynamic Programming Wikipedia](https://en.wikipedia.org/wiki/Dynamic_programming)
