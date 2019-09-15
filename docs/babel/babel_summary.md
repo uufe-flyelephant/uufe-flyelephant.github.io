@@ -15,7 +15,9 @@ Babel 是一个编译器。主要的包是 babel-core,负责代码解析、转�
 原始代码 --> [Babel Plugin] --> 转换后的代码
 ```
 
-Babel, 官网提供了一个 ```repl``` 环境: 中文官网 https://www.babeljs.cn/repl  和 英文官网 https://babeljs.io/repl
+Babel, 官网提供了一个 ```repl``` 环境: 中文官网 https://www.babeljs.cn/repl  和 英文官网 https://babeljs.io/repl  
+
+[在线AST语法树+transform, https://astexplorer.net/](https://astexplorer.net/)
 
 在这个环境中，可以测试每个特定的插件的功能。
 
@@ -208,3 +210,9 @@ webpack babel-loader: https://webpack.js.org/concepts/loaders/
 ```
 
 webpack执行打包时，优先读取options中的配置。如果没有设置options属性，再从package.json同级目录中找babel配置文件。
+
+# TODO
+RIver补充待整理：
+* [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler)
+* [babel-handbook](https://github.com/jamiebuilds/babel-handbook)
+* [js自举js虚拟机](https://github.com/bramblex/jsjs)
