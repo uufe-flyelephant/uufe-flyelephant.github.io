@@ -126,6 +126,8 @@
   - [Flutter](./docs/kuaduan/flutter.md)
 - 分布式、集群、微服务
   - [分布式、集群和微服务概念整理](https://www.cnblogs.com/xishuai/p/6039838.html)
+- 软素质
+  - [软素质](./docs/soft/index.md)
 - 其他
   - [大厂博客](./docs/others/blogs.md)
   - [圈内大会](./docs/others/meeting.md)
