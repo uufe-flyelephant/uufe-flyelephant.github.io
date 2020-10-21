@@ -67,7 +67,7 @@
     - [分而治之](./docs/algorithm/divide-and-conquer.md)
     - [动态规划](./docs/algorithm/dynamic-programming.md)
     - 贪心算法
-    - 回溯算法       
+    - 回溯算法
   - 相关知识
     - 算法复杂度
 - 计算机网络
@@ -117,11 +117,14 @@
         - [Web安全结合AI和机器学习]
         - [防火墙技术]
         - [CSP](https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP)
-- 项目工程实践 
+- 项目工程实践
   - 前后端同构
 - [NodeJS](./docs/nodejs/index.md)
-- 跨端 
+- 跨端
   - [Flutter](./docs/kuaduan/flutter.md)
+- 心经
+  - 基本素质(./docs/xinjing/flutter.md)
+  - 行动原则(./docs/xinjing/flutter.md)
 - 其他
   - [大厂博客](./docs/others/blogs.md)
   - [圈内大会](./docs/others/meeting.md)
