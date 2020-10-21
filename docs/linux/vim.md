@@ -177,6 +177,8 @@ nnoremap就在normal模式下(狂按esc后的模式)生效
 defaults write -g InitialKeyRepeat -int 10 # normal minimum is 15 (225 ms)
 defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 ```
+* MAC title 展示
+![](./imgs/1.png)
 
 # 好的资源
 [Best_Vim_Tips](https://vim.fandom.com/wiki/Best_Vim_Tips)
@@ -199,3 +201,4 @@ defaults write -g KeyRepeat -int 1 # normal minimum is 2 (30 ms)
 * term ++rows=8
 * bot term ++rows=8
 * My IDE Like: vim file | ,tt | ,tmb | :vert term
+

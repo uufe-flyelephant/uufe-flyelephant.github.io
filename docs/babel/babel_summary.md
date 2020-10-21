@@ -212,7 +212,4 @@ webpack babel-loader: https://webpack.js.org/concepts/loaders/
 webpack执行打包时，优先读取options中的配置。如果没有设置options属性，再从package.json同级目录中找babel配置文件。
 
 # TODO
-RIver补充待整理：
-* [the-super-tiny-compiler](https://github.com/jamiebuilds/the-super-tiny-compiler)
-* [babel-handbook](https://github.com/jamiebuilds/babel-handbook)
-* [js自举js虚拟机](https://github.com/bramblex/jsjs)
+

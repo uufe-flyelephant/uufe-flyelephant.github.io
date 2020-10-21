@@ -17,6 +17,8 @@
   - [template标签]
 - CSS
   - [基础](./docs/css/index.md)
+- 浏览器
+  - [基础](./docs/css/index.md)
 - Vue
   - [核心原理](./docs/vue/core.md)
 - React
@@ -45,7 +47,7 @@
   - [网络](./docs/performance/network.md)
   - [2c业务秒开](./docs/performance/2c.md)
 - 编译原理
-  - 四则运算简易实现
+  - [四则运算简易实现](./docs/compiler/calculator-parse.md)
   - [the-super-tiny-compiler](https://the-super-tiny-compiler.glitch.me/)
 - Linux
   - [Command](./docs/linux/command.md)
@@ -122,9 +124,12 @@
 - [NodeJS](./docs/nodejs/index.md)
 - 跨端
   - [Flutter](./docs/kuaduan/flutter.md)
-- 心经
-  - 基本素质(./docs/xinjing/flutter.md)
-  - 行动原则(./docs/xinjing/flutter.md)
+- 软素质
+  - [基本素质](./docs/soft/基本素质.md)
+  - [行动原则](./docs/soft/行动原则.md)
+  - [其他](./docs/soft/index.md)
+- 分布式、集群、微服务
+  - [分布式、集群和微服务概念整理](https://www.cnblogs.com/xishuai/p/6039838.html)
 - 其他
   - [大厂博客](./docs/others/blogs.md)
   - [圈内大会](./docs/others/meeting.md)
