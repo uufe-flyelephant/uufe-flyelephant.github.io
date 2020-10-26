@@ -127,6 +127,7 @@
 - 应用系统设计
   - [可靠，可扩展，可维护的应用系统](./docs/system-design/可靠可扩展可维护的应用系统.md)
   - [数据模型与查询语⾔](./docs/system-design/数据模型与查询语⾔.md)
+  - [数据存储与检索](./docs/system-design/数据存储与检索.md)
 - 软素质
   - [基本素质](./docs/soft/基本素质.md)
   - [行动原则](./docs/soft/行动原则.md)
