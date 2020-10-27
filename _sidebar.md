@@ -64,6 +64,7 @@
     - [树](./docs/data-structure/06-tree.md)
     - [图](./docs/data-structure/07-graph.md)
     - [排序](./docs/data-structure/08-sort.md)
+  - [布隆过滤器](./docs/data-structure/布隆过滤器.md)
 - 算法
   - 算法设计与技巧
     - [分而治之](./docs/algorithm/divide-and-conquer.md)
