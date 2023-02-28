@@ -9,7 +9,7 @@
   "dependencies": {},
   "devDependencies": {
     "docsify-cli": "^4.3.0",
-    "http-server": "^0.11.1"
+    "http-server": "^14.1.1"
   },
   "scripts": {
     "start": "http-server . & open http://127.0.0.1:8080"
